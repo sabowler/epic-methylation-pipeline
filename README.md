@@ -11,12 +11,12 @@ Processes raw IDAT files from 850K+ CpG EPIC v2 arrays through QC, normalization
 ## Quickstart
 
 ```bash
-# 1. Place your ACCN sample directories in a working directory:
+# 1. Place your sample directories in a working directory:
 #    /your/data/
-#      ACCN001/
+#      SAMPLE001/
 #        <basename>_Grn.idat
 #        <basename>_Red.idat
-#      ACCN002/
+#      SAMPLE002002/
 #        ...
 
 # 2. Edit the setwd() line in methyl.R to point to your data directory
@@ -43,7 +43,7 @@ Install on first use by uncommenting the installation block at the top of `methy
 |---|---|
 | Array type | Illumina EPIC v2 (935K probes) |
 | File format | Raw IDAT pairs (`_Grn.idat` + `_Red.idat`) |
-| Directory convention | One folder per sample named `ACCN001`, `ACCN002`, etc. |
+| Directory convention | One folder per sample named `SAMPLE001`, `SAMPLE002`, etc. |
 
 ---
 
@@ -83,7 +83,6 @@ SNP-associated and cross-reactive probes are removed using `rmSNPandCH()` where 
 Methylation analysis methods developed in support of:
 
 - Bowler SA et al. *A machine learning approach utilizing DNA methylation as an accurate classifier of COVID-19 disease severity.* Scientific Reports (2022)
-- Premeaux TA, Bowler SA et al. *Machine learning models based on fluid immunoproteins that predict non-AIDS adverse events in people with HIV.* iScience (2024)
 
 Full publication list: [Google Scholar](https://scholar.google.com/citations?user=qM-DZhMAAAAJ)
 
